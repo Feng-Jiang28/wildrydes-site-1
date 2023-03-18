@@ -20,9 +20,7 @@ WildRydes.map = WildRydes.map || {};
             method: 'POST',
             url: _config.api.invokeUrl + '/ride',
             headers: {
-                authori: authToken,
-                'Access-Control-Allow-Origin': 'https://main.d37lf9gznz5aer.amplifyapp.com',
-                'Access-Control-Allow-Headers': 'Content-Type, Authorization, Access-Control-Allow-Headers'
+                Authorization: authToken,
             },
             data: JSON.stringify({
                 PickupLocation: {
